@@ -1,109 +1,26 @@
-/* Reset margins and paddings, set box-sizing */
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
-/* Basic body styles */
 body {
-    font-family: Arial, sans-serif;
+    color: #1c1c20;
+    font-family: 'Oxygen', sans-serif;
 }
 
-/* Heading styles */
-h1 {
-    text-align: center;
-    margin: 20px 0;
-    font-size: 1.75em; /* 75% larger than base font size */
+.navbar {
+    border: 0;
+    border-radius: 0;
 }
 
-/* Container styles */
-.container {
-    width: 90%;
-    margin: 0 auto;
+.navbar-default .navbar-brand{
+    color: #1c1c20;
 }
 
-/* Section styles */
-.section {
-    border: 1px solid black;
-    background-color: #f2f2f2;
-    margin-bottom: 20px;
-    padding: 20px;
-    position: relative;
-    padding-top: 70px; /* Push content down to avoid overlap with title */
+h2 {
+    margin-top: 20px;
 }
 
-/* Section title styles */
-.section-title {
-    position: absolute;
-    top: 0;
-    right: 0;
-    background-color: #ccc;
-    padding: 10px;
-    border: 1px solid black;
-    font-size: 1.25em; /* 25% larger than base font size */
-}
+section {
+    border: 1px solid #000;
+    margin-top: 7%;
+    margin-bottom: 3%;
+    padding: 5%;
+    background-color: rgba(255, 0, 0, .7);
 
-/* Section content styles */
-.section-content {
-    /* Content is already pushed down by padding-top on .section */
-}
-
-/* Mobile styles (default) */
-
-/* Tablet styles */
-@media (min-width: 768px) and (max-width: 991px) {
-    .section {
-        float: left;
-        width: 100%;
-        margin-right: 0;
-    }
-    .section:nth-child(1), .section:nth-child(2) {
-        width: 49%;
-        margin-right: 2%;
-    }
-    .section:nth-child(2) {
-        margin-right: 0;
-    }
-    .section:nth-child(3) {
-        width: 100%;
-    }
-}
-
-/* Desktop styles */
-@media (min-width: 992px) {
-    .section {
-        float: left;
-        width: 32%;
-        margin-right: 2%;
-        margin-bottom: 0;
-    }
-    .section:last-child {
-        margin-right: 0;
-    }
-}
-
-/* Background colors for sections and titles */
-.section:nth-child(1) {
-    background-color: #ffcc99; /* Light orange */
-}
-
-.section:nth-child(1) .section-title {
-    background-color: #ff9966; /* Orange */
-}
-
-.section:nth-child(2) {
-    background-color: #ccff99; /* Light green */
-}
-
-.section:nth-child(2) .section-title {
-    background-color: #99cc66; /* Green */
-}
-
-.section:nth-child(3) {
-    background-color: #99ccff; /* Light blue */
-}
-
-.section:nth-child(3) .section-title {
-    background-color: #6699cc; /* Blue */
 }
